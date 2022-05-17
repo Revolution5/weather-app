@@ -1,3 +1,4 @@
-import { getWeatherData } from "./weather-data";
+import { getWeatherData, processWeatherData } from "./weather-data";
 
-getWeatherData("las vegas");
+let data = getWeatherData("fountain valley");
+
