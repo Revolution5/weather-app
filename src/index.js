@@ -1,6 +1,6 @@
 import { populateStats } from "./dom";
 
-populateStats();
+populateStats("fountain valley");
 
 
 
