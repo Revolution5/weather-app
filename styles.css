@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #cbd5e1;
+}
+
+.weather-stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.location {
+    display: flex;
+}
