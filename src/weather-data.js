@@ -19,6 +19,23 @@ export async function getWeatherData(city) {
     catch(err) {
         console.log(err);
     }
-    
 }
 
+export function processWeatherData(weatherData) {
+    let weatherStats = {
+        cityName: "",
+        countryName: "",
+        currentTemp: 0,
+        humidity: 0
+    };
+
+    weatherData.then(function(data) {
+        // console.log(data);
+        weatherStats.cityName = data.name;
+        weatherStats.countryName = data.sys.country;
+        weatherStats.currentTemp = data.main.temp;
+        weatherStats.humidity = data.main.humidity;
+    })
+
+    return weatherStats;
+}
