@@ -29,13 +29,11 @@ export function processWeatherData(weatherData) {
         humidity: 0
     };
 
-    weatherData.then(function(data) {
-        // console.log(data);
-        weatherStats.cityName = data.name;
-        weatherStats.countryName = data.sys.country;
-        weatherStats.currentTemp = data.main.temp;
-        weatherStats.humidity = data.main.humidity;
-    })
+        weatherStats.cityName = weatherData.name;
+        weatherStats.countryName = weatherData.sys.country;
+        weatherStats.currentTemp = weatherData.main.temp;
+        weatherStats.humidity = weatherData.main.humidity;
+    
 
     return weatherStats;
 }
