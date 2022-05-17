@@ -1,9 +1,10 @@
-import { getWeatherData, processWeatherData } from "./weather-data";
+import { populateStats } from "./dom";
 
-let data = await getWeatherData("fountain valley");
+populateStats();
 
-let stats = processWeatherData(data);
-console.log(stats);
+
+
+
 
 
 

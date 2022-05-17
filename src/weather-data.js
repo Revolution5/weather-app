@@ -28,12 +28,11 @@ export function processWeatherData(weatherData) {
         currentTemp: 0,
         humidity: 0
     };
-
-        weatherStats.cityName = weatherData.name;
-        weatherStats.countryName = weatherData.sys.country;
-        weatherStats.currentTemp = weatherData.main.temp;
-        weatherStats.humidity = weatherData.main.humidity;
     
+    weatherStats.cityName = weatherData.name;
+    weatherStats.countryName = weatherData.sys.country;
+    weatherStats.currentTemp = weatherData.main.temp;
+    weatherStats.humidity = weatherData.main.humidity;
 
     return weatherStats;
 }
