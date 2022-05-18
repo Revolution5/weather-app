@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-image: url(images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -8,20 +18,34 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #cbd5e1;
+   
 }
 
-.weather-stats {
+.weather {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-size: 50px;
+    align-items: flex-start;
+    margin-left: 300px;
+    font-size: 30px;
     margin-top: 200px;
+    
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+}
+
+.substats {
+    display: flex;
+    flex-direction: column;
 }
 
 .temp {
-    font-size: 150px;
+    font-size: 80px;
+    align-self: center;
+    justify-self: center;
 }
 
 .location {
