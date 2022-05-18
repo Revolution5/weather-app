@@ -21,6 +21,8 @@ function populateStats(input) {
     let country = document.querySelector(".country");
     let temp = document.querySelector(".temp");
     let humidity = document.querySelector(".humidity");
+    let feelsLike = document.querySelector(".feels-like");
+    let wind = document.querySelector(".wind");
 
     getWeatherData(input)
     .then(function(data) {
@@ -28,7 +30,9 @@ function populateStats(input) {
         city.textContent = stats.cityName + ", ";
         country.textContent = stats.countryName;
         temp.textContent = stats.currentTemp + "°";
-        humidity.textContent = "Humidity: " + stats.humidity;
+        humidity.textContent = "Humidity: " + stats.humidity + "%";
+        feelsLike.textContent = "Feels Like: " + stats.feelsLike + "°";
+        wind.textContent = "Wind Speed: " + stats.wind + "MPH";
         console.log(stats);
     }) 
 }
