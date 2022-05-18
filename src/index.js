@@ -1,6 +1,6 @@
-import { populateStats } from "./dom";
+import { getInput } from "./dom";
 
-populateStats("fountain valley");
+getInput();
 
 
 

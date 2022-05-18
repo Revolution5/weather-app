@@ -14,8 +14,17 @@ body {
 .weather-stats {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    margin-top: 200px;
+}
+
+.temp {
+    font-size: 150px;
 }
 
 .location {
     display: flex;
+    gap: 7px;
 }
