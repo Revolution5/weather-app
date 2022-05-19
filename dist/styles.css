@@ -46,9 +46,12 @@ body {
     font-size: 80px;
     align-self: center;
     justify-self: center;
+    font-weight: bold;
 }
 
 .location {
     display: flex;
     gap: 7px;
+    font-weight: bold;
+    font-size: 40px;
 }

@@ -29,9 +29,9 @@ function populateStats(input) {
         let stats = processWeatherData(data);
         city.textContent = stats.cityName + ", ";
         country.textContent = stats.countryName;
-        temp.textContent = stats.currentTemp + "°";
+        temp.textContent = stats.currentTemp + "°F";
         humidity.textContent = "Humidity: " + stats.humidity + "%";
-        feelsLike.textContent = "Feels Like: " + stats.feelsLike + "°";
+        feelsLike.textContent = "Feels Like: " + stats.feelsLike + "°F";
         wind.textContent = "Wind Speed: " + stats.wind + "MPH";
         console.log(stats);
     }) 
